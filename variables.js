@@ -1,9 +1,10 @@
 var nombre = 'Derlys', apellido ='Dominguez'
-var edad = 28 
 
-edad = '28 años'
+var nombreEnMayusculas = nombre.toUpperCase()
+var apellidoEnMinusculas = apellido.toLowerCase()
+var primeraLetraDelNombre = nombre.charAt(0)
+var cantidadDeLetrasDelNombre = nombre.length 
 
-console.log('Hola ' + nombre + ' ' + apellido)
-console.log('tengo ' + edad )
+var nombreCompleto = `${nombre} ${apellido.toUpperCase()}`
 
-var peso = 75
+var str = nombre.substr(1,2)
