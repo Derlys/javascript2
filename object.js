@@ -9,11 +9,14 @@ var paola = {
   edad: "38",
 };
 
-function imprimirNombreEnMayusculas({nombre}) {
-  console.log(nombre.toUpperCase());
+
+
+function imprimirNombreYEdad(persona){
+
+    
+    
+    console.log ('hola,','me llamo', persona.nombre, 'y tengo', persona.edad + 'años')
 }
 
-imprimirNombreEnMayusculas(derlys);
-imprimirNombreEnMayusculas(paola);
-imprimirNombreEnMayusculas({ nombre: 'bram'})
-//imprimirNombreEnMayusculas({apellido: 'gomez'})
+imprimirNombreYEdad(derlys);
+imprimirNombreYEdad(paola);
