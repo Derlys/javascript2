@@ -1,12 +1,12 @@
 var derlys = {
   nombre: "derlys",
   apellido: "dominguez",
-  edad: "33",
+  edad: 33,
 };
 var paola = {
   nombre: "paola",
   apellido: "motta",
-  edad: "38",
+  edad: 38,
 };
 
 
@@ -20,3 +20,12 @@ function imprimirNombreYEdad(persona){
 
 imprimirNombreYEdad(derlys);
 imprimirNombreYEdad(paola);
+
+function nacimiento (persona){
+  return {
+    ...persona,
+    edad: persona.edad + 1
+  }
+}
+
+nacimiento()
