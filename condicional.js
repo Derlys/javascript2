@@ -47,9 +47,8 @@ imprimirProfesiones(derlys)
 
 const MAYORIA_DE_EDAD = 18
 
-function esMayorDeEdad(persona){
-    return persona.edad >= MAYORIA_DE_EDAD
-}
+  const esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD
+
 
 function imprimirSiEsMayorDeEdad (persona){
     if(esMayorDeEdad(persona)){
