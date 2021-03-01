@@ -57,6 +57,13 @@ function imprimirSiEsMayorDeEdad (persona){
         console.log(`${persona.nombre} es menor edad`)
     }
 }
+ function  permitirAcceso (persona){
+    if (!esMayorDeEdad(persona)){
+        console.log ('ACCESO DENEGADO')
+    }
+
+ }
+ permitirAcceso()
 
 imprimirSiEsMayorDeEdad(derlys)
 imprimirSiEsMayorDeEdad(paola)
