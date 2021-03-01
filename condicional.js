@@ -45,12 +45,17 @@ function  imprimirProfesiones (persona){
 
 imprimirProfesiones(derlys)
 
+const MAYORIA_DE_EDAD = 18
+
+function esMayorDeEdad(persona){
+    return persona.edad >= MAYORIA_DE_EDAD
+}
+
 function imprimirSiEsMayorDeEdad (persona){
-    console.log(`${persona.nombre} es:`)
-    if(persona.edad >= 18){
-        console.log('mayor de edad')
+    if(esMayorDeEdad(persona)){
+        console.log(`${persona.nombre} es mayor de edad`)
     } else {
-        console.log('menor de edad')
+        console.log(`${persona.nombre} es menor edad`)
     }
 }
 
